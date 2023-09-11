@@ -248,16 +248,16 @@
                                 <img src="./assets/images/barcode_icon.gif" alt="Scan" width="15" />
                             </a>&nbsp;
                             <a class="relative inline-blk cursor" href="{{url}}{{export.excelTemplate}}"
-                                *ngIf="!hideExcel && showExcelTemplate" target="_blank"
+                                *ngIf="!hideExcel && showExcelTemplate" target="_blank" rel="noopener noreferrer"
                                 [title]="export.excelTemplateTitle">
                                 <img src="./assets/images/excel.svg" alt="Excel" width="15" />
                             </a>&nbsp;
                             <a class="relative inline-blk cursor" href="{{url}}{{export.pdf}}" *ngIf="!hidePdf"
-                                target="_blank" title="PDF">
+                                target="_blank" title="PDF" rel="noopener noreferrer">
                                 <img src="./assets/images/pdf.svg" alt="PDF" width="15" />
                             </a>&nbsp;
                             <a class="relative inline-blk cursor" href="{{url}}{{export.excel}}" *ngIf="!hideExcel"
-                                target="_blank" title="Excel">
+                                target="_blank" title="Excel" rel="noopener noreferrer">
                                 <img src="./assets/images/excel.svg" alt="Excel" width="15" />
                             </a>&nbsp;
 
@@ -266,11 +266,11 @@
                     <span *ngIf="!export && !hideExport && !isReport" class="export">
                         <div class="text-right relative top-3">
                             <a class="relative inline-blk cursor" href="{{url}}ExportUtilAction.do?command=exportToPdf"
-                                target="_blank" *ngIf="!hidePdf">
+                                target="_blank" *ngIf="!hidePdf" rel="noopener noreferrer">
                                 <img src="./assets/images/pdf.svg" alt="PDF" width="15" />
                             </a>&nbsp;
                             <a class="relative inline-blk cursor" href="{{url}}ExportUtilAction.do?command=exportToCsv"
-                                target="_blank" *ngIf="!hideExcel">
+                                target="_blank" *ngIf="!hideExcel" rel="noopener noreferrer">
                                 <img src="./assets/images/excel.svg" alt="Excel" width="15" />
                             </a>
 
